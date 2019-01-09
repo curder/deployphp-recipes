@@ -1,5 +1,20 @@
 ## Deployer部署时的钉钉通知
 
+### 使用
+
+本项目是[Deployer](https://github.com/deployphp/deployer)的一个部署通知，所以使用之前需要您安装好deployer/deployer（建议您完成一次成功部署之后再来配置）。
+
+```
+composer require curder/deployphp-recipes
+```
+
+在您的部署配置文件`deploy.php`文件中添加文件的引入：
+
+```
+require __DIR__.'/packages/curder/deployphp-recipes/dingtalk.php';
+```
+
+### 配置
 修改本地部署文件添加如下语句：
 
 ```
