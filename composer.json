@@ -1,0 +1,12 @@
+{
+    "name": "curder/deployphp-recipes",
+    "description": "Deployer Recipes for DingTalk Notification.",
+    "license": "MIT",
+    "authors": [
+    {
+        "name": "curder",
+        "email": "curder@foxmail.com"
+    }],
+    "require":
+    {}
+}
