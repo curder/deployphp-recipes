@@ -7,6 +7,18 @@
         "name": "curder",
         "email": "curder@foxmail.com"
     }],
+    "autoload":
+    {
+        "files": [
+            "autoload.php"
+        ]
+    },
     "require":
-    {}
+    {
+        "deployer/recipes": "self.version"
+    },
+    "require-dev":
+    {
+        "deployer/deployer": "^6.3"
+    }
 }

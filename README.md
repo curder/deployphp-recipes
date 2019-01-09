@@ -5,7 +5,7 @@
 本项目是[Deployer](https://github.com/deployphp/deployer)的一个部署通知，所以使用之前需要您安装好deployer/deployer（建议您完成一次成功部署之后再来配置）。
 
 ```
-composer require curder/deployphp-recipes
+composer require curder/deployphp-recipes --dev
 ```
 
 在您的部署配置文件`deploy.php`文件中添加文件的引入：
@@ -34,6 +34,8 @@ after('deploy:failed', 'dingtalk:notify:failure');
 
 > 获取对应通知到的钉钉群的token值，获取方式通过下面的网址中获取。
 > 将上述代码中的**domain.com**换成您自己可辨识的部署目标网址即可。
+
+更多第三方插件【[参考这里](https://github.com/deployphp/recipes)】
 
 ## 参考链接
 
