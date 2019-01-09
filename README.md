@@ -6,7 +6,6 @@
 
 ```
 composer require curder/deployphp-recipes --dev # 当前项目安装
-composer global require curder/deployphp-recipes # 全局安装
 ```
 
 在您的部署配置文件`deploy.php`文件中添加文件的引入：
@@ -14,12 +13,6 @@ composer global require curder/deployphp-recipes # 全局安装
 ```
 require __DIR__.'/vendor/curder/deployphp-recipes/dingtalk.php';
 ```
-
-如果通过全局安装当前组件请使用下面的语句引入
-```
-require 'curder/deployphp-recipes/dingtalk.php';
-```
-
 ### 配置
 修改本地部署文件添加如下语句：
 
