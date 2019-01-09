@@ -27,7 +27,7 @@ set('dingtalk_failure_text', 'Deploy to **domain.com** *{{target}}* failed');
 set('dingtalk_success_text', 'Deploy to **domain.com** *{{target}}* successful');
 
 // Handle notify
-before('deploy:info', 'dingtalk:notify');
+after('deploy:info', 'dingtalk:notify');
 after('success', 'dingtalk:notify:success');
 after('deploy:failed', 'dingtalk:notify:failure');
 ```

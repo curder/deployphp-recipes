@@ -15,7 +15,7 @@
     },
     "require":
     {
-        "deployer/recipes": "self.version"
+        "curder/deployphp-recipes": "self.version"
     },
     "require-dev":
     {
