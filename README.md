@@ -11,7 +11,7 @@ composer require curder/deployphp-recipes --dev
 在您的部署配置文件`deploy.php`文件中添加文件的引入：
 
 ```
-require __DIR__.'/packages/curder/deployphp-recipes/dingtalk.php';
+require __DIR__.'/vendor/curder/deployphp-recipes/dingtalk.php';
 ```
 
 ### 配置
@@ -22,9 +22,9 @@ require __DIR__.'/packages/curder/deployphp-recipes/dingtalk.php';
 set('dingtalk_access_token', '');
 
 // DingTalk text
-set('dingtalk_text', '_{{user}}_ deploying **domain.com** `{{branch}}` to *{{target}}*');
-set('dingtalk_failure_text', 'Deploy to **domain.com** *{{target}}* failed');
-set('dingtalk_success_text', 'Deploy to **domain.com** *{{target}}* successful');
+set('dingtalk_text', '_{{user}}_正在部署**{{ target }}**, 从`{{branch}}`分支部署到*{{target}}*');
+set('dingtalk_failure_text', '**{{ branch }}**部署到*{{target}}*失败');
+set('dingtalk_success_text', '**{{ branch }}**部署到*{{target}}*成功');
 
 // Handle notify
 after('deploy:info', 'dingtalk:notify');
