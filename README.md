@@ -5,13 +5,19 @@
 本项目是[Deployer](https://github.com/deployphp/deployer)的一个部署通知，所以使用之前需要您安装好deployer/deployer（建议您完成一次成功部署之后再来配置）。
 
 ```
-composer require curder/deployphp-recipes --dev
+composer require curder/deployphp-recipes --dev # 当前项目安装
+composer global require curder/deployphp-recipes # 全局安装
 ```
 
 在您的部署配置文件`deploy.php`文件中添加文件的引入：
 
 ```
 require __DIR__.'/vendor/curder/deployphp-recipes/dingtalk.php';
+```
+
+如果通过全局安装当前组件请使用下面的语句引入
+```
+require 'curder/deployphp-recipes/dingtalk.php';
 ```
 
 ### 配置
